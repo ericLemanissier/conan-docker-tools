@@ -5,7 +5,8 @@ LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 ENV PYENV_ROOT=/opt/pyenv \
     PATH=/opt/pyenv/shims:${PATH} \
     CXX=/usr/bin/g++ \
-    CC=/usr/bin/gcc
+    CC=/usr/bin/gcc \
+    CONAN_GCC_VERSIONS=4.9
 
 RUN dpkg --add-architecture i386 \
     && printf "deb http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu trusty main\n" >> /etc/apt/sources.list \

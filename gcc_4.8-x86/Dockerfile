@@ -7,7 +7,8 @@ ENV CONAN_ENV_ARCH=x86 \
     PYENV_ROOT=/opt/pyenv \
     PATH=/opt/pyenv/shims:${PATH} \
     CXX=/usr/bin/g++ \
-    CC=/usr/bin/gcc
+    CC=/usr/bin/gcc \
+    CONAN_GCC_VERSIONS=4.8
 
 RUN dpkg --add-architecture i386 \
     && apt-get -qq update \

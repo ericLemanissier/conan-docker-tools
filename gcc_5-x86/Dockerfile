@@ -7,7 +7,8 @@ ENV CONAN_ENV_ARCH=x86 \
     PYENV_ROOT=/opt/pyenv \
     PATH=/opt/pyenv/shims:${PATH} \
     CXX=/usr/bin/g++ \
-    CC=/usr/bin/gcc
+    CC=/usr/bin/gcc \
+    CONAN_GCC_VERSIONS=5
 
 RUN apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \

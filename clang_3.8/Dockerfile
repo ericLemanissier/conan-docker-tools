@@ -8,7 +8,8 @@ ENV LLVM_VERSION=3.8 \
     CMAKE_C_COMPILER=clang \
     CMAKE_CXX_COMPILER=clang++ \
     PYENV_ROOT=/opt/pyenv \
-    PATH=/opt/pyenv/shims:${PATH}
+    PATH=/opt/pyenv/shims:${PATH} \
+    CONAN_CLANG_VERSIONS=3.8
 
 COPY sources.list /etc/apt/sources.list
 

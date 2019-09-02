@@ -7,7 +7,8 @@ ENV CONAN_ENV_ARCH=x86 \
     PYENV_ROOT=/opt/pyenv \
     PATH=/opt/pyenv/shims:${PATH} \
     CXX=/usr/bin/g++ \
-    CC=/usr/bin/gcc
+    CC=/usr/bin/gcc \
+    CONAN_GCC_VERSIONS=6
 
 COPY sources.list /etc/apt/sources.list
 

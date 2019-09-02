@@ -11,7 +11,8 @@ ENV PATH=/opt/pyenv/shims:/opt/rh/devtoolset-7/root/usr/bin:${PATH:+:${PATH}} \
     LD_LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib:/opt/rh/devtoolset-7/root/usr/lib64/dyninst:/opt/rh/devtoolset-7/root/usr/lib/dyninst${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} \
     PYENV_ROOT=/opt/pyenv \
     CXX=/opt/rh/devtoolset-7/root/usr/bin/g++ \
-    CC=/opt/rh/devtoolset-7/root/usr/bin/gcc
+    CC=/opt/rh/devtoolset-7/root/usr/bin/gcc \
+    CONAN_GCC_VERSIONS=7
 
 COPY cloudlinux.repo /etc/yum.repos.d/cloudlinux.repo
 

@@ -10,7 +10,8 @@ ENV LLVM_VERSION=3.9 \
     CMAKE_CXX_COMPILER=clang++ \
     CONAN_ENV_ARCH=x86 \
     PYENV_ROOT=/opt/pyenv \
-    PATH=/opt/pyenv/shims:${PATH}
+    PATH=/opt/pyenv/shims:${PATH} \
+    CONAN_CLANG_VERSIONS=3.9
 
 COPY sources.list /etc/apt/sources.list
 

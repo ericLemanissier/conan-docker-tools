@@ -5,7 +5,8 @@ LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 ENV PYENV_ROOT=/opt/pyenv \
     PATH=/opt/pyenv/shims:${PATH} \
     CC=/usr/bin/gcc \
-    CXX=/usr/bin/g++
+    CXX=/usr/bin/g++ \
+    CONAN_GCC_VERSIONS=7.2
 
 COPY sources.list /etc/apt/sources.list
 

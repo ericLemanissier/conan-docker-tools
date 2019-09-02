@@ -3,7 +3,8 @@ FROM ubuntu:wily
 LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
 ENV PYENV_ROOT=/opt/pyenv \
-    PATH=/opt/pyenv/shims:${PATH}
+    PATH=/opt/pyenv/shims:${PATH} \
+    CONAN_GCC_VERSIONS=4.9
 
 COPY sources.list /etc/apt/sources.list
 

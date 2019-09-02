@@ -10,7 +10,8 @@ ENV LLVM_VERSION=8.0 \
     CMAKE_CXX_COMPILER=clang++ \
     CONAN_ENV_ARCH=x86 \
     PYENV_ROOT=/opt/pyenv \
-    PATH=/opt/pyenv/shims:${PATH}
+    PATH=/opt/pyenv/shims:${PATH} \
+    CONAN_CLANG_VERSIONS=8
 
 RUN apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \

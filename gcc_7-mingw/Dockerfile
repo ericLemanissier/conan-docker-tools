@@ -13,7 +13,8 @@ ENV CC=x86_64-w64-mingw32-gcc \
     LD=x86_64-w64-mingw32-ld \
     FC=x86_64-w64-mingw32-gcc-gfortran \
     WINDRES=x86_64-w64-mingw32-windres \
-    RC=x86_64-w64-mingw32-windres
+    RC=x86_64-w64-mingw32-windres \
+    CONAN_GCC_VERSIONS=7
 
 RUN sudo apt-get -qq update \
     && sudo apt-get -qq install -y --force-yes --no-install-recommends \

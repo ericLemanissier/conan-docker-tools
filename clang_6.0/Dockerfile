@@ -8,7 +8,8 @@ ENV LLVM_VERSION=6.0 \
     CMAKE_C_COMPILER=clang \
     CMAKE_CXX_COMPILER=clang++ \
     PYENV_ROOT=/opt/pyenv \
-    PATH=/opt/pyenv/shims:${PATH}
+    PATH=/opt/pyenv/shims:${PATH} \
+    CONAN_CLANG_VERSIONS=6.0
 
 RUN dpkg --add-architecture i386 \
     && apt-get -qq update \
